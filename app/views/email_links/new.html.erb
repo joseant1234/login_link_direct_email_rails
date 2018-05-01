@@ -1,0 +1,7 @@
+<h1>Sign up your account with a link in your email</h1>
+<p>No password!. Tell us your email above</p>
+
+<%= form_with url: send_link_path, method: :post do |f| %>
+	<input type="text" name="email" placeholder="Your email" class="form-control">
+	<input type="submit" value="Generate link" class="bt btn-info">
+<% end %>

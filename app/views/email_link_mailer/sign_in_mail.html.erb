@@ -1,0 +1,7 @@
+<h3>Hola <%= @user.email %></h3>
+
+<p>Reciemnte alguien solicitò un link para ingresar a tu cuenta, si fuiste tu, solo presiona el boton de abajo para iniciar sesion</p>
+
+<p>
+	<%= link_to 'Ingresar a mi cuenta', email_link_url(token: @token) %>
+</p>
